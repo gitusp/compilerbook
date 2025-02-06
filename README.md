@@ -5,5 +5,8 @@ https://www.sigbus.info/compilerbook#%E9%96%A2%E6%95%B0%E5%91%BC%E3%81%B3%E5%87%
 docker build -t compilerbook https://www.sigbus.info/compilerbook/Dockerfile
 
 # One shot command example
-docker run --rm -v .:/work -w /work compilerbook make test
+docker run --rm -v `pwd`:/work -w /work compilerbook cc -o dist/foo src/foo.c
+
+# Interactive shell
+docker run --rm -v `pwd`:/work -w /work -it compilerbook
 ```
