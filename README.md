@@ -2,11 +2,11 @@ https://www.sigbus.info/compilerbook#%E9%96%A2%E6%95%B0%E5%91%BC%E3%81%B3%E5%87%
 
 ```sh
 # Docker image for compile
-docker build -t compilerbook https://www.sigbus.info/compilerbook/Dockerfile
+docker build --platform linux/x86_64 -t compilerbook https://www.sigbus.info/compilerbook/Dockerfile
 
 # One shot command example
-docker run --rm -v `pwd`:/work -w /work compilerbook cc -o dist/foo src/foo.c
+docker run --platform linux/x86_64 --rm -v `pwd`:/work -w /work compilerbook cc -o dist/foo src/foo.c
 
 # Interactive shell
-docker run --rm -v `pwd`:/work -w /work -it compilerbook
+docker run --platform linux/x86_64 --rm -v `pwd`:/work -w /work -it compilerbook
 ```
