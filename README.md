@@ -1,4 +1,4 @@
-https://www.sigbus.info/compilerbook#bnf%E3%81%AB%E3%82%88%E3%82%8B%E7%94%9F%E6%88%90%E8%A6%8F%E5%89%87%E3%81%AE%E8%A8%98%E8%BF%B0
+https://www.sigbus.info/compilerbook#%E5%86%8D%E5%B8%B0%E3%82%92%E5%90%AB%E3%82%80%E7%94%9F%E6%88%90%E8%A6%8F%E5%89%87
 
 ```sh
 # Docker image for compile
